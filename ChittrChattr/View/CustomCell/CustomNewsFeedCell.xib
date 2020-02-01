@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customNewsFeedCell" id="KGk-i7-Jjw" customClass="CustomNewsFeedCell" customModule="ChittrChattr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s71-54-aS6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qzP-rY-A17">
+                                <rect key="frame" x="8" y="8.5" width="84" height="84"/>
+                                <color key="backgroundColor" red="0.84044913970000001" green="0.85818543469999997" blue="0.83937209189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="H0y-dN-rxG"/>
+                                    <constraint firstAttribute="width" constant="84" id="ugJ-RP-1WZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHa-ZH-RFi">
+                                <rect key="frame" x="100" y="8.5" width="140" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Af5-2F-rB1"/>
+                                    <constraint firstAttribute="height" constant="17" id="h6a-ba-mQ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                                <color key="textColor" red="0.11206394510000001" green="0.21105662759999999" blue="0.036802455069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXs-r5-HRi">
+                                <rect key="frame" x="100" y="33.5" width="212" height="33"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="22"/>
+                                <color key="textColor" red="0.11206394510000001" green="0.21105662759999999" blue="0.036802455069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m06-Yc-Pxj">
+                                <rect key="frame" x="278.5" y="5.5" width="33.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.11206394510000001" green="0.21105662759999999" blue="0.036802455069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m06-Yc-Pxj" secondAttribute="trailing" constant="8" id="1Gb-rD-Tcw"/>
+                            <constraint firstItem="qzP-rY-A17" firstAttribute="leading" secondItem="s71-54-aS6" secondAttribute="leading" constant="8" id="MFN-ns-fR2"/>
+                            <constraint firstAttribute="trailing" secondItem="CXs-r5-HRi" secondAttribute="trailing" constant="8" id="Mk3-QL-aAq"/>
+                            <constraint firstAttribute="bottom" secondItem="CXs-r5-HRi" secondAttribute="bottom" constant="34" id="NkF-hT-QKy"/>
+                            <constraint firstItem="qzP-rY-A17" firstAttribute="top" secondItem="s71-54-aS6" secondAttribute="top" constant="8" id="Och-sY-jZc"/>
+                            <constraint firstItem="m06-Yc-Pxj" firstAttribute="top" secondItem="s71-54-aS6" secondAttribute="top" constant="5" id="VOf-XA-nvn"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="W2B-Gs-xOe"/>
+                            <constraint firstItem="LHa-ZH-RFi" firstAttribute="top" secondItem="s71-54-aS6" secondAttribute="top" constant="8" id="XSj-ay-nlI"/>
+                            <constraint firstItem="CXs-r5-HRi" firstAttribute="leading" secondItem="qzP-rY-A17" secondAttribute="trailing" constant="8" id="YeB-yl-aV1"/>
+                            <constraint firstItem="CXs-r5-HRi" firstAttribute="top" secondItem="LHa-ZH-RFi" secondAttribute="bottom" constant="8" id="bvB-tE-mAZ"/>
+                            <constraint firstItem="LHa-ZH-RFi" firstAttribute="leading" secondItem="qzP-rY-A17" secondAttribute="trailing" constant="8" id="gfq-Kw-Yv8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="s71-54-aS6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3eD-90-EIO"/>
+                    <constraint firstItem="s71-54-aS6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8ad-fV-qDJ"/>
+                    <constraint firstAttribute="trailing" secondItem="s71-54-aS6" secondAttribute="trailing" id="SX3-ko-P75"/>
+                    <constraint firstAttribute="bottom" secondItem="s71-54-aS6" secondAttribute="bottom" id="W7h-Jh-e35"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="newsImageDisplay" destination="qzP-rY-A17" id="aXN-aW-Z8q"/>
+                <outlet property="newsPostDisplay" destination="CXs-r5-HRi" id="nef-D5-2ex"/>
+                <outlet property="newsTimeDisplay" destination="m06-Yc-Pxj" id="iS4-vc-6pw"/>
+                <outlet property="newsUserNameDisplay" destination="LHa-ZH-RFi" id="jw3-8P-AKu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ProfileIcon" width="500" height="500"/>
+    </resources>
+</document>

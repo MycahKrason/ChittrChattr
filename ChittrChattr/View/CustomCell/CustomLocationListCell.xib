@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customLocationListCell" id="KGk-i7-Jjw" customClass="CustomLocationListCell" customModule="ChittrChattr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHL-Vw-xcA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3a-7L-yr9">
+                                <rect key="frame" x="8" y="4" width="304" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDH-9z-pi8">
+                                        <rect key="frame" x="8" y="8" width="288" height="41"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                        <color key="textColor" red="0.11206394510000001" green="0.21105662759999999" blue="0.036802455069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93967709210000006" green="0.95613911490000003" blue="0.933016018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UDH-9z-pi8" secondAttribute="trailing" constant="8" id="2mX-aR-9NM"/>
+                                    <constraint firstItem="UDH-9z-pi8" firstAttribute="top" secondItem="u3a-7L-yr9" secondAttribute="top" constant="8" id="4h6-gl-MpD"/>
+                                    <constraint firstItem="UDH-9z-pi8" firstAttribute="centerY" secondItem="u3a-7L-yr9" secondAttribute="centerY" id="KR9-Ya-kTc"/>
+                                    <constraint firstItem="UDH-9z-pi8" firstAttribute="leading" secondItem="u3a-7L-yr9" secondAttribute="leading" constant="8" id="XGA-Sv-aZ1"/>
+                                    <constraint firstAttribute="bottom" secondItem="UDH-9z-pi8" secondAttribute="bottom" constant="8" id="YjX-lq-gud"/>
+                                    <constraint firstItem="UDH-9z-pi8" firstAttribute="centerX" secondItem="u3a-7L-yr9" secondAttribute="centerX" id="n8q-Zm-kwc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u3a-7L-yr9" firstAttribute="top" secondItem="KHL-Vw-xcA" secondAttribute="top" constant="4" id="7TX-My-NGm"/>
+                            <constraint firstAttribute="bottom" secondItem="u3a-7L-yr9" secondAttribute="bottom" constant="4" id="JK4-kN-oth"/>
+                            <constraint firstAttribute="height" constant="65" id="K9D-BL-hRY"/>
+                            <constraint firstItem="u3a-7L-yr9" firstAttribute="leading" secondItem="KHL-Vw-xcA" secondAttribute="leading" constant="8" id="qQZ-Yh-dek"/>
+                            <constraint firstAttribute="trailing" secondItem="u3a-7L-yr9" secondAttribute="trailing" constant="8" id="wqN-dr-wjg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KHL-Vw-xcA" secondAttribute="trailing" id="AUZ-Sj-cdX"/>
+                    <constraint firstItem="KHL-Vw-xcA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="N4P-8H-AqL"/>
+                    <constraint firstAttribute="bottom" secondItem="KHL-Vw-xcA" secondAttribute="bottom" id="Pjq-1x-Ssa"/>
+                    <constraint firstItem="KHL-Vw-xcA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hkl-iT-WZS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="locationNameLabel" destination="UDH-9z-pi8" id="Sae-4A-2S1"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="54.5"/>
+        </tableViewCell>
+    </objects>
+</document>

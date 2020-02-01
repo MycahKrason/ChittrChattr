@@ -1,0 +1,6 @@
+framework module Pods_ChittrChattr {
+  umbrella header "Pods-ChittrChattr-umbrella.h"
+
+  export *
+  module * { export * }
+}
